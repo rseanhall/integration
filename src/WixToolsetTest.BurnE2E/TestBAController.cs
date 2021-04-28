@@ -9,7 +9,7 @@ namespace WixToolsetTest.BurnE2E
 
     public class TestBAController : IDisposable
     {
-        private const string BaseRegKeyPath = @"Software\WOW6432Node\WiX\Tests";
+        private const string BaseRegKeyPath = @"Software\WiX\Tests";
 
         public TestBAController(WixTestContext testContext)
         {

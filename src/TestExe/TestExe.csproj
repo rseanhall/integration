@@ -8,7 +8,7 @@
     <RootNamespace>TestExe</RootNamespace>
     <OutputType>Exe</OutputType>
     <DebugType>embedded</DebugType>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>

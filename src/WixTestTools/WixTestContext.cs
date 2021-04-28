@@ -57,7 +57,7 @@ namespace WixTestTools
         /// </remarks>
         public RegistryKey GetTestRegistryRoot(string additionalPath = null)
         {
-            var key = String.Format(@"Software\WOW6432Node\WiX\Tests\{0}\{1}", this.TestGroupName, additionalPath ?? String.Empty);
+            var key = String.Format(@"Software\WiX\Tests\{0}\{1}", this.TestGroupName, additionalPath ?? String.Empty);
             return Registry.LocalMachine.OpenSubKey(key, true);
         }
 

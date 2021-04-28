@@ -90,7 +90,7 @@ namespace WixTestTools
 
         public static bool TryGetPerMachineBundleRegistrationById(string bundleId, out BundleRegistration registration)
         {
-            var registrationKeyPath = $"{BURN_REGISTRATION_REGISTRY_UNINSTALL_KEY_WOW6432NODE}\\{bundleId}";
+            var registrationKeyPath = $"{BURN_REGISTRATION_REGISTRY_UNINSTALL_KEY}\\{bundleId}";
             using var registrationKey = Registry.LocalMachine.OpenSubKey(registrationKeyPath);
             var success = registrationKey != null;
             registration = success ? GetBundleRegistration(registrationKey) : null;
